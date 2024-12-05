@@ -153,5 +153,16 @@ Before Running this file:
   * Run this file: _python lunalink_main.py_
 
 
+### Node-RED Dashboard File:
 
+**1. node-red-dashboard.txt:**
+
+This file contains the .json in plain text to Import into the Node-RED Dashboard for the Graphical User Interface (GUI). This requires the palettes node-red, node-red-contrib-ui-led, node-red-dashboard to be previously installed. 
+
+To Import this file:
+* Open Node-RED 
+* Navigate to the Menu tab and choose Import
+* Copy and Paste the.json plain text then click import
+* The Flow should automatically populate in a tab titled "Test Dashboard"
+* Access this Dashboard UI In Browser at: _http://<hostname IP>:1880/ui_ (EX: http://192.168.88.7:1880/ui)
 
