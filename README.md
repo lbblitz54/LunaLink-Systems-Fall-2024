@@ -36,7 +36,12 @@ Node-RED Palettes
 
 ## How to Use each file
 
-### Arduino files:
+There are 3 sets of files:
+* Arduino Files
+* Python Files
+* Node-Red Dashboard Files
+
+### Arduino Files:
 
 **1. basic_motor_control.ino:**
    
@@ -90,7 +95,7 @@ This file allows for Serial Communication with Raspberry Pi (RPi) to Control 2 N
    * The vertical and horizontal motor pulse (PUL) and direction (DIR) GPIO pins should be changed based on your setup.
 
 
-  ### Python files:
+  ### Raspberry Pi Python Files:
 
 **1. cv_object_tracking.py:**
 
@@ -153,7 +158,7 @@ Before Running this file:
   * Run this file: _python lunalink_main.py_
 
 
-### Node-RED Dashboard File:
+### Node-RED Dashboard Files:
 
 **1. node-red-dashboard.txt:**
 
