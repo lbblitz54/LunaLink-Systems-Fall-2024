@@ -14,6 +14,7 @@ int dirPin = 35;   // Direction pin
 
 int tempCount = 0;
 int steps = 5000;
+int delay = 200;
 
 
 void setup() {
@@ -31,9 +32,9 @@ void loop() {
   while(tempCount < steps)
   {
       digitalWrite(pulsePin, HIGH);
-      delayMicroseconds(110); // Adjust this delay for speed
+      delayMicroseconds(delay); // Adjust this delay for speed
       digitalWrite(pulsePin, LOW);
-      delayMicroseconds(90);
+      delayMicroseconds(delay);
       tempCount++;
   }
   Serial.println("Finished");
