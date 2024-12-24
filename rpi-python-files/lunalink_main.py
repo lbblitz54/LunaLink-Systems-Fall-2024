@@ -10,6 +10,8 @@
 
 # Previously Named : alignment_rpiCam.py   
 
+import os
+os.environ["DISPLAY"] = ":0"
 
 import time
 import cv2
@@ -55,7 +57,7 @@ y_lower_bound = 0
 
 # IP of other device being pinged
 # IP Changes based on RPi and Connection Method
-# Possible IPs:  WIFI:[10.251.190.11, 10.250.148.190] OR via Switch:[192.168.88.6, 192.168.88.7]
+# Possible IPs:  WIFI:[10.251.190.11, ] OR via Switch:[192.168.88.6, 192.168.88.7]
 other_device_ip = "10.251.190.11" 
 
 # Conditional Requirements for movement
@@ -283,7 +285,7 @@ def get_move_cmd():
 
 def send_image_nodered(image):
  
-    node_red_url = "http://10.250.148.190:1880/image"  # IP Changes based on RPi and Connection Method
+    node_red_url = "http://localhost:1880/image"  # IP Changes based on RPi and Connection Method
     # Encode the image as JPEG
     _, buffer = cv2.imencode('.jpg', image)
 
